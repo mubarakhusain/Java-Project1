@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>0</y>
+      <w>270</w>
+      <h>570</h>
+    </coordinates>
+    <panel_attributes>/calculationPrj::Calculation/
+--
+-x: Integer
+-y: Integer
+-z: Integer
+-a: double
+-b: double
+-c: double
+-string: String
+-investment: double
+-annualRate: double
+-years: double
+--
++getInvestment(): double
++setInvestment(double investment): void
++getAnnualRate(): double
++setAnnualRate(double annualRate): void
++getYears(): double
++setYears(double years): void
++getA(): double
++setA(double a): void
++getB(): double
++setB(double b): void
++getC(): double
++setC(double c): void
++getString(): String
++setString(String string): void
++getX(): Integer
++setX(Integer x): void
++getY(): Integer
++setY(Integer y): void
++getZ(): Integer
++setZ(Integer z): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>0</y>
+      <w>230</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>calculationPrj::Main
+--
+--
++addition(): void
++subtract(): void
++multiply(): void
++division(): void
++exponent(): void
++squareRoot(): void
++nthRoot(): void
++logarithm(): void
++naturalLog(): void
++sine(): void
++cosine(): void
++tan(): void
++sinInverse(): void
++cosInverse(): void
++tanInverse(): void
++BinaryToDecimal(): void
++DecimalToBinary(): void
++systematicInvestmentPlan(): void
++storingNumber(): void
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>10</y>
+      <w>270</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>calculationPrj::ArithmeticCalculation
+--
+--
+~addition(double a, double b): double
+~subtraction(double a, double b): double
+~division(double a, double b): double
+~multiply(double a, double b): double
+~exponent(double a, double b): double
+~squareRoot(double a): double
+~log(double a): double
+~nlog(double a): double
++addition(double x, double y): double
++subtraction(double a, double b): double
++division(double a, double b): double
++multiply(double a, double b): double
++exponent(double a, double b): double
++squareRoot(): void
++squareRoot(double a): double
++nthroot(int n, double x): double
++nthroot(int n, double x, double p): double
++log(double a): double
++nlog(double a): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>0</y>
+      <w>260</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>calculationPrj::TrigonometricCalculation
+--
+--
+~sine(double a): double
+~cosine(double a): double
+~tangent(double a): double
+~sinInverse(double a): double
+~cosInverse(double a): double
+~tanInverse(double a): double
++sine(double a): double
++cosine(double a): double
++tangent(double a): double
++sinInverse(double a): double
++cosInverse(double a): double
++tanInverse(double a): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>580</y>
+      <w>430</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>calculationPrj::CalculationHistory
+--
+-second: PrintStream
+--
++CalculationHistory(OutputStream main, PrintStream second): ctor
++close(): void
++flush(): void
++write(byte[] buf, int off, int len): void
++write(int b): void
++write(byte[] b): void
++history(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>580</y>
+      <w>230</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>calculationPrj::NumberConversion
+--
+--
+~BinaryToDecimal(String a): double
+~DecimalToBinary(Integer a): String
++BinaryToDecimal(String a): double
++DecimalToBinary(Integer a): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>580</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>calculationPrj::memoryStorage
+--
+--
++storeNumber(): FileOutputStream
++writingToFile(int z): void
++readingData(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>580</y>
+      <w>450</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>calculationPrj::SIP
+--
+--
++sip(double investAmount, double annualRate, double years): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
